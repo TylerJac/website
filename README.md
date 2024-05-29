@@ -140,3 +140,86 @@ CSS Styling:
 Ensures a responsive design with flexbox for the navigation bar and media queries for mobile responsiveness.
 Styling for text, navigation links, header, footer, and images to ensure a visually appealing layout.
 This setup meets all the requirements and ensures a clean, responsive, and appealing design for fans of Mash and his love for cream puffs from "Mashle."
+
+my query: make the background black and the text white
+AI response: Sure! To make the background black and the text white, you need to update the CSS file. Here is the modified styles.css:
+
+CSS (styles.css)
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black; /* Set background color to black */
+    color: white; /* Set text color to white */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    background-color: #444;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+}
+
+main section {
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
